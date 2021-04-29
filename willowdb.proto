@@ -1,0 +1,9 @@
+syntax = "proto3";
+package willowdbServer;
+
+import "google/protobuf/empty.proto";
+
+
+service WillowDB {
+  rpc Ping(google.protobuf.Empty) returns (google.protobuf.Empty);
+}
